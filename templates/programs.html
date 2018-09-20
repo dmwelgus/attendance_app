@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Programs</title>
+  </head>
+  <body>
+
+  <div class="program list">
+    <h1>Programs</h1>
+
+    {% for program in program_list %}
+      {{ program.program }} <br>
+    {% endfor %}
+  
+  </div>
+  <div class="nav-right">
+    <a href="{% url 'new_program' %}">+ New Program</a>
+  </div>
+
+  </body>
+</html>

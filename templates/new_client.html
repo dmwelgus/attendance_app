@@ -1,0 +1,12 @@
+<!-- templates/new_client.html -->
+
+<html>
+  <head>
+    <h1>New Client</h1>
+  </head>
+  <body>
+  	<div class="new_client_form">
+  		<form action="" method="post">{% csrf_token %}
+  			{{ form.as_p}}
+        <input type="submit" value="Update" />
+    </form>
